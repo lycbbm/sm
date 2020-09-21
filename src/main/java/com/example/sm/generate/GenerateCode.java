@@ -366,8 +366,9 @@ public class GenerateCode {
 
   public static void test() {
     System.out.println("bbm test");
-    int i = 15;
     String bbm = "bb";
+    int i = 20;
+    long t = 30;
   }
 
 }
