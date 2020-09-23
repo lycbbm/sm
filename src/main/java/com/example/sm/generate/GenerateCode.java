@@ -358,10 +358,17 @@ public class GenerateCode {
     generateCode.getCodeContent();
 //
 
-//     generateCode.getCodeContent2();
+     generateCode.getCodeContent2();
+
+
   }
 
 
-
+  public static void test() {
+    System.out.println("bbm test");
+    String bbm = "bb";
+    int i = 20;
+    long t = 30;
+  }
 
 }
