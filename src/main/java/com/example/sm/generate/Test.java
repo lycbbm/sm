@@ -24,7 +24,6 @@ public class Test {
     private String getCodeContent2() throws IOException {
         // 明文码体数据16 = 引导信息1 + 体系标识2 + 分类标识3 + ct1 + 码体版本标识17 + 码体签名
         String ct1 = "getCt1()";
-        System.out.println("***getCodeContent ct2 1:" + ct1);
         System.out.println("****getCodeContent ct2 2:" + ct1.length());
         String codeData = "idxInf + tagCode + tagType + getCt1()";
         String endData = codeData + "generateCodeTime + codeEffictiveTime + codeVersion + getCodeBodySign2()";
