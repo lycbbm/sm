@@ -20,6 +20,8 @@ public class Test {
         try {
             vs = SM2Utils.verifySign("test".getBytes(), Util.hexToByte(pubk),Util.hexToByte(summary), Util.hexToByte(sign));
             System.out.println("test");
+            vs = SM2Utils.verifySign("test test test".getBytes(), Util.hexToByte(pubk),Util.hexToByte(summary), Util.hexToByte(sign));
+            System.out.println("test test test");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (IOException e) {
