@@ -19,6 +19,7 @@ public class Test {
         boolean vs = false;
         try {
             vs = SM2Utils.verifySign("userId.getBytes()".getBytes(), Util.hexToByte(pubk),Util.hexToByte(summary), Util.hexToByte(sign));
+            System.out.println("bbm test");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (IOException e) {
