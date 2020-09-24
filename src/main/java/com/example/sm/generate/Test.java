@@ -18,8 +18,8 @@ public class Test {
     public static boolean verify(String summary,String sign, String pubk) {
         boolean vs = false;
         try {
-            vs = SM2Utils.verifySign("bbm test".getBytes(), Util.hexToByte(pubk),Util.hexToByte(summary), Util.hexToByte(sign));
-            System.out.println("bbm st");
+            vs = SM2Utils.verifySign("master".getBytes(), Util.hexToByte(pubk),Util.hexToByte(summary), Util.hexToByte(sign));
+            System.out.println("master");
         } catch (IllegalArgumentException e) {
             e.printStackTrace();
         } catch (IOException e) {
